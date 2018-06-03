@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/llPrinc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/er_main_footer" >
+
+        <TextView
+            android:id="@+id/txReportName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="4dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edReportName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_report_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="8dp"
+                android:text="Origem:"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/rgOrigem">
+
+                <RadioButton
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arquivo CSV Local"
+                    android:id="@+id/rbArqLocal"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Drive"
+                    android:id="@+id/rbGoogleDrive"/>
+            </RadioGroup>
+
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/btBuscar"
+                android:text="Buscar"
+                android:onClick="clickBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/txInfOrigem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/btAtz"
+                android:visibility="invisible"
+                android:text="Criar"
+                android:onClick="clickAtz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

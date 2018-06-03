@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NewTech</string>
+    <string name="title_activity_configurador">Configurador</string>
+    <string name="title_activity_new_report">Novo Relatório</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="prompt_report_name">Nome do Relatório</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">Usuário</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_nome_completo_ob">* Nome Completo</string>
+    <string name="prompt_email_ob">* Email</string>
+    <string name="prompt_password_ob">* Senha</string>
+    <string name="prompt_company">Empresa</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_new_user">Criar novo usuário</string>
+    <string name="action_cadastrar_new_user">Cadastrar novo usuário</string>
+
+
+    <string name="aplicar">Aplicar</string>
+    <string name="redefinir">Redefinir</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llPrinc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/er_main_footer" >
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btAplicar"
+                android:onClick="clickBtAplicar"
+                android:layout_width="@dimen/top_bar_buttons"
+                android:layout_height="@dimen/top_bar_buttons"
+                android:background="@android:drawable/ic_menu_revert" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/svTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:padding="8dp"
+                android:id="@+id/tlFiltro"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+            </TableLayout>
+
+        </ScrollView>
+
+        <TextView
+                android:id="@+id/txMsg"
+                android:layout_below="@id/svTable"
+                android:visibility="invisible"
+                android:text="Este relatório não possui filtros.\n\nVá para o menu de configuração, opção parâmetros, para adicionar alguns."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

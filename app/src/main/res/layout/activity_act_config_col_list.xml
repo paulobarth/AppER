@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/llLayout"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_weight="1"
+        android:paddingTop="4dp"
+        android:id="@+id/txColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rlConfig"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Negrito"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/chNegrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+
+            android:layout_alignParentRight="true"
+            android:text="Filtro"
+            android:id="@+id/chFiltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Tamanho:"
+            android:id="@+id/txSize"
+            android:layout_below="@+id/chNegrito"
+            android:paddingTop="6dp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <Spinner
+            android:layout_below="@id/chFiltro"
+            android:layout_toRightOf="@+id/txSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:id="@+id/spSize"
+            android:dropDownWidth="40dp"
+            android:dropDownSelector="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

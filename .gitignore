@@ -1,0 +1,18 @@
+app/proguard-rules.pro
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# IntelliJ
+.idea/
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+

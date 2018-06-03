@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llPrinc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/er_main_footer" >
+
+        <TextView
+            android:id="@+id/txReportName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edLayout"
+                    android:hint="Nome do layout"
+                    android:layout_weight="2"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btLayout"
+                    android:onClick="clickBtLayout"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layout_width="60dp"
+                    android:layout_height="@dimen/top_bar_buttons"
+                    android:background="@android:drawable/ic_menu_zoom" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txTitle1"
+                android:text="Adicione linhas e informe qtde de Colunas para cadas registro do seu relatório:"
+                android:textSize="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tlReport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btNewLine"
+                    android:onClick="clickBtNewLine"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="+"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btDelLine"
+                    android:onClick="clickBtDelLine"
+                    android:layout_below="@+id/btNewLine"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="-"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btAplicar"
+                android:onClick="clickBtAplicar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:text="Defina os campos para o seu layout:"
+                android:id="@+id/txLayout"
+                android:visibility="invisible"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TableLayout
+                android:id="@+id/tlLayout"
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+            </TableLayout>
+
+            <!--<Button-->
+                <!--android:visibility="invisible"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:onClick="clickBtRedefinir"-->
+                <!--android:id="@+id/btRedefinir"-->
+                <!--android:text="Redefinir"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="40dp" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

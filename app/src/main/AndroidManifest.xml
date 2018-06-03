@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.newtechs.er">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.USE_CREDENTIALS" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <!--android:name="android.support.multidex.MultiDexApplication"-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_er"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_er"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActConfig"
+            android:label="@string/title_activity_configurador" />
+        <activity
+            android:name=".ActNewReport"
+            android:label="@string/title_activity_new_report" />
+        <activity
+            android:name=".ActReports"
+            android:label="Relatórios" />
+        <activity android:name=".ActShowReport" />
+        <activity android:name=".ActConfigRepCol" />
+        <activity
+            android:name=".ActConfigRepLayout"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ActConfigRepMenu" />
+        <activity android:name=".ActLayoutList" />
+        <activity android:name=".google.ActGoogleLogin" />
+        <activity
+            android:name=".NewUserActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppThemeNoAction"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ActFiltro"></activity>
+        <activity android:name=".ActConfigShare"></activity>
+        <activity android:name=".google.SheetApiTest"/>
+        <activity android:name=".google.PickFileWithOpenerActivity"/>
+
+    </application>
+
+</manifest>

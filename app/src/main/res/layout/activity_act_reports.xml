@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llPrinc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/er_main_footer" >
+
+        <Button
+            android:onClick="clickBtSincReports"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/top_bar_buttons"
+            android:layout_height="@dimen/top_bar_buttons"
+            android:background="@drawable/ic_cloud"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lsReport"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/txMsg"
+            android:visibility="invisible"
+            android:text="Você ainda não possui relatórios.\n\nVá para o menu de configuração para adicionar alguns."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

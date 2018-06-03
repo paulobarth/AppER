@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llPrinc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/er_main_footer" >
+
+        <TextView
+            android:id="@+id/txReportName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btLayout"
+                android:text="Layout"
+                android:onClick="clickBtLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/btParamCol"
+                android:text="Parâmetros"
+                android:onClick="clickBtParamCol"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btShareReport"
+            android:text="Compartilhar"
+            android:onClick="clickBtShareReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btExcluir"
+            android:text="Excluir Relatório"
+            android:onClick="clickBtExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+    </LinearLayout>
+
+</LinearLayout>
